@@ -9,7 +9,7 @@ class Jiroflex::Daemon
   def initialize(members, rest, serial)
     @members = members
     @rest = rest
-    Jiroflex::SerialNotifier.serial(serial)
+    Jiroflex::SerialNotifier::serial(serial)
   end
   
   def start

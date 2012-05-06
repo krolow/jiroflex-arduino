@@ -17,10 +17,10 @@ class Jiroflex::Member
   end
   
   def update(status)
-    puts Jiroflex::SerialNotifier.connection
     if (status != self.status)
+      changed
       self.status = status
-      notify_observers self
+      notify_observers(self)
     end
   end
   

@@ -8,13 +8,11 @@ class Jiroflex::Rest
   attr_accessor :url
   
   def initialize(url)
-    @url = url
+    self.url = url
   end
   
   def progress(username)
-    return true
-    
-    response = RestClient.get(url + '/progress/' + username)
+    response = RestClient.get(self.url + '/progress/' + username)
     progress = JSON.parse(response.body)
     
     return progress['progress']

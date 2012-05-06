@@ -4,12 +4,16 @@ require "observer"
 class Jiroflex::SerialNotifier
   
   def self.serial(serial)
-    @@connection = serial
+    @@serial = serial
   end
   
   def update(member)
     puts 'updated'
-    @@connection.send(member.pin, member.status)
+    @@serial.send(member.pin, member.status)
+  end
+  
+  class << self
+      attr_accessor :ololo
   end
   
 end
