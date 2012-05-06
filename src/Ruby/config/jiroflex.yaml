@@ -1,0 +1,15 @@
+members:
+    vkrolow: 12
+    gquevedo: 11
+    fbadia: 10
+    mrosa: 9
+    dbuss: 8
+    gquental: 7
+    
+rest:
+    url: http://127.0.0.1:5000
+    
+arduino:
+    port: /com2 
+    baud: 9600
+    
