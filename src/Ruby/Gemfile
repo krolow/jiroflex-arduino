@@ -1,0 +1,5 @@
+source "http://rubygems.org"
+
+gem "json", ">= 1.6.5"
+gem "rest-client", ">= 0.9.1"
+gem "serialport", ">= 1.0.4"
